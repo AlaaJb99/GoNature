@@ -1,0 +1,5 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+#icon{
+  -fx-background-image: url("images/vicon.png");
+  -fx-background-repeat: no-repeat;
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="696.0" prefWidth="992.0" style="-fx-background-color: THISTLE;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clientGUI.SignInVisitorPageController">
+   <children>
+      <Pane opacity="0.6" prefHeight="200.0" prefWidth="992.0" style="-fx-background-color: CORNSILK;" />
+      <HBox fx:id="logo" layoutX="667.0" layoutY="10.0" prefHeight="180.0" prefWidth="186.0" />
+      <Label contentDisplay="CENTER" layoutX="192.0" layoutY="90.0" prefHeight="118.0" prefWidth="431.0" text="Sign In to Go Nature" textAlignment="RIGHT" textFill="#005b0f" textOverrun="LEADING_WORD_ELLIPSIS">
+         <font>
+            <Font name="Sitka Display Bold" size="48.0" />
+         </font>
+      </Label>
+      <Button fx:id="signInBtn" graphicTextGap="20.0" layoutX="226.0" layoutY="477.0" mnemonicParsing="false" onAction="#getSignInBtn" prefHeight="52.0" prefWidth="123.0" style="-fx-background-color: DARKSEAGREEN;" text="Sign In">
+         <font>
+            <Font name="Modern No. 20" size="24.0" />
+         </font>
+      </Button>
+      <Label layoutX="191.0" layoutY="270.0" text="Enter Your ID/Sub Number:">
+         <font>
+            <Font name="Modern No. 20" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtVistorId" layoutX="191.0" layoutY="333.0">
+         <font>
+            <Font name="Modern No. 20" size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="backBtn" layoutX="613.0" layoutY="477.0" mnemonicParsing="false" onAction="#getBackBtn" prefHeight="52.0" prefWidth="123.0" style="-fx-background-color: INDIANRED;" text="Back">
+         <font>
+            <Font name="Modern No. 20" size="24.0" />
+         </font>
+      </Button>
+      <Label layoutX="429.0" layoutY="333.0" text="*" textFill="RED">
+         <font>
+            <Font name="Modern No. 20" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

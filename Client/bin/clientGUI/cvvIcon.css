@@ -1,0 +1,6 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+#cvvIcon{
+-fx-background-image: url("images/cvvIcon.png");
+  -fx-background-repeat: no-repeat;
+  -fx-background-size: 100% 100%;
+}

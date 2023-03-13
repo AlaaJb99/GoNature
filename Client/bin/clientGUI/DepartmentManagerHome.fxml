@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="696.0" prefWidth="992.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clientGUI.DepartmentManagerHome">
+   <children>
+      <HBox fx:id="logo" layoutX="667.0" layoutY="10.0" prefHeight="180.0" prefWidth="186.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="257.0" layoutY="74.0" prefHeight="118.0" prefWidth="367.0" style="-fx-background-color: CORNSILK;" text="Department Manager Home " textAlignment="CENTER" textFill="#017532" wrapText="true">
+         <font>
+            <Font name="Modern No. 20" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="108.0" layoutY="287.0" prefHeight="41.0" prefWidth="222.0" text="Choose an action:">
+         <font>
+            <Font name="Modern No. 20" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="BackBtn" layoutX="849.0" layoutY="601.0" mnemonicParsing="false" onAction="#getBackBtn" prefHeight="41.0" prefWidth="77.0" text="Back">
+         <font>
+            <Font name="Modern No. 20" size="18.0" />
+         </font></Button>
+      <Label fx:id="welcome" layoutX="108.0" layoutY="192.0" prefHeight="50.0" prefWidth="353.0" text="Welcome First Name,">
+         <font>
+            <Font name="Modern No. 20" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnProduceReports" layoutX="145.0" layoutY="348.0" mnemonicParsing="false" onAction="#ProduceReports" prefHeight="70.0" prefWidth="295.0" text="Produce Reports ">
+         <font>
+            <Font name="Modern No. 20" size="20.0" />
+         </font></Button>
+      <Button fx:id="btnGenerateReports" layoutX="145.0" layoutY="442.0" mnemonicParsing="false" onAction="#GenerateReports" prefHeight="70.0" prefWidth="295.0" text="Generate Park Manager Reports ">
+         <font>
+            <Font name="Modern No. 20" size="20.0" />
+         </font></Button>
+      <Button fx:id="btnConfirmUpdates" layoutX="477.0" layoutY="348.0" mnemonicParsing="false" onAction="#ConfirmUpdates" prefHeight="70.0" prefWidth="295.0" text="Confirm Parameters &#10;Updates " textAlignment="CENTER">
+         <font>
+            <Font name="Modern No. 20" size="20.0" />
+         </font></Button>
+      <Text fx:id="txtCounter" fill="#d01313" layoutX="741.0" layoutY="397.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnConfirmDiscounts" layoutX="477.0" layoutY="442.0" mnemonicParsing="false" onAction="#ConfirmDiscounts" prefHeight="70.0" prefWidth="295.0" text="Confirm Discount &#10;Requests" textAlignment="CENTER">
+         <font>
+            <Font name="Modern No. 20" size="20.0" />
+         </font></Button>
+      <Text fx:id="discountCount" fill="#d01313" layoutX="741.0" layoutY="491.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Button layoutX="145.0" layoutY="531.0" mnemonicParsing="false" onAction="#live" prefHeight="70.0" prefWidth="295.0" text="Visitor numbers in park &#10;*LIVE*" textAlignment="CENTER">
+         <font>
+            <Font name="Modern No. 20" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
