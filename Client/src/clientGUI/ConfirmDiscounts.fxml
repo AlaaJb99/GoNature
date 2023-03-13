@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="696.0" prefWidth="992.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clientGUI.ConfirmDiscounts">
+   <children>
+      <HBox fx:id="logo" layoutX="667.0" layoutY="10.0" prefHeight="180.0" prefWidth="186.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="193.0" layoutY="96.0" prefHeight="118.0" prefWidth="374.0" style="-fx-background-color: CORNSILK;" text="Confirm Discounts" textAlignment="CENTER" textFill="#017532" wrapText="true">
+         <font>
+            <Font name="Modern No. 20" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="256.0" prefHeight="31.0" prefWidth="283.0" text="Discount Requests:">
+         <font>
+            <Font name="Sitka Display Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="BackBtn" layoutX="770.0" layoutY="572.0" mnemonicParsing="false" onAction="#getBackBtn" prefHeight="58.0" prefWidth="97.0" style="-fx-background-radius: 30;" text="Back">
+         <font>
+            <Font name="Modern No. 20" size="25.0" />
+         </font></Button>
+      <TableView fx:id="table" layoutX="36.0" layoutY="321.0" prefHeight="280.0" prefWidth="606.0" style="-fx-alignment: CENTER; -fx-font-family: &quot;Times New Roman&quot;, Times, serif; -fx-font-weight: bold;">
+        <columns>
+          <TableColumn fx:id="park_column" prefWidth="100.0" style="-fx-alignment: CENTER; -fx-font-family: &quot;Times New Roman&quot;, Times, serif; -fx-font-weight: bold;" text="Park Number" />
+          <TableColumn fx:id="discount_column" prefWidth="83.0" style="-fx-alignment: CENTER; -fx-font-family: &quot;Times New Roman&quot;, Times, serif; -fx-font-weight: bold;" text="Discount" />
+            <TableColumn fx:id="start_column" prefWidth="105.0" style="-fx-alignment: CENTER; -fx-font-family: &quot;Times New Roman&quot;, Times, serif; -fx-font-weight: bold;" text="Start Date" />
+            <TableColumn fx:id="end_column" prefWidth="103.0" style="-fx-alignment: CENTER;" text="End Date" />
+            <TableColumn fx:id="accept_column" minWidth="0.0" prefWidth="105.0" text="Accept" />
+            <TableColumn fx:id="decline_column" prefWidth="108.0" text="Decline" />
+        </columns>
+      </TableView>
+      <TextArea fx:id="text" layoutX="664.0" layoutY="327.0" prefHeight="134.0" prefWidth="283.0">
+         <font>
+            <Font name="Sitka Display Bold" size="20.0" />
+         </font></TextArea>
+   </children>
+</Pane>

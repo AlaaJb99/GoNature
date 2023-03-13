@@ -1,0 +1,7 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+#background{
+  -fx-background-image: url("images/logo2.jpg");
+}
+.root{
+-fx-background-image: url("images/back.jpg");
+}

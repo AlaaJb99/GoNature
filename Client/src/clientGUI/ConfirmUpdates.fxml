@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="696.0" prefWidth="992.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clientGUI.ConfirmUpdates">
+   <children>
+      <HBox fx:id="logo" layoutX="667.0" layoutY="10.0" prefHeight="180.0" prefWidth="186.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="193.0" layoutY="96.0" prefHeight="118.0" prefWidth="367.0" style="-fx-background-color: CORNSILK;" text="Confirm Updates" textAlignment="CENTER" textFill="#017532" wrapText="true">
+         <font>
+            <Font name="Modern No. 20" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="98.0" layoutY="214.0" prefHeight="80.0" prefWidth="222.0" text="Updates :">
+         <font>
+            <Font name="Sitka Heading Bold" size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="BackBtn" layoutX="720.0" layoutY="556.0" mnemonicParsing="false" onAction="#getBackBtn" prefHeight="67.0" prefWidth="108.0" text="Back">
+         <font>
+            <Font name="Modern No. 20" size="25.0" />
+         </font></Button>
+      <Label layoutX="88.0" layoutY="349.0" prefHeight="23.0" prefWidth="316.0" text="Maximum number of visitros">
+         <font>
+            <Font name="Sitka Text Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="437.0" layoutY="301.0" text="Existing">
+         <font>
+            <Font name="Sitka Heading Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="568.0" layoutY="301.0" text="Requested">
+         <font>
+            <Font name="Sitka Heading Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnMaxAccept" layoutX="693.0" layoutY="344.0" mnemonicParsing="false" onAction="#maxAccept" text="Accept">
+         <font>
+            <Font name="Sitka Heading Bold" size="16.0" />
+         </font></Button>
+      <Button fx:id="btnMaxDecline" layoutX="785.0" layoutY="344.0" mnemonicParsing="false" onAction="#maxDecline" text="Decline">
+         <font>
+            <Font name="Sitka Heading Bold" size="16.0" />
+         </font></Button>
+      <Label fx:id="maxExisting" layoutX="461.0" layoutY="349.0" text="300">
+         <font>
+            <Font name="Sitka Display Bold" size="20.0" />
+         </font></Label>
+      <Label fx:id="maxRequested" layoutX="592.0" layoutY="349.0" text="320">
+         <font>
+            <Font name="Sitka Display Bold" size="20.0" />
+         </font></Label>
+      <Label layoutX="88.0" layoutY="393.0" prefHeight="27.0" prefWidth="367.0" text="Number of casual visitors allowed">
+         <font>
+            <Font name="Sitka Text Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnDifAccept" layoutX="693.0" layoutY="391.0" mnemonicParsing="false" onAction="#difAccept" text="Accept">
+         <font>
+            <Font name="Sitka Heading Bold" size="16.0" />
+         </font></Button>
+      <Button fx:id="btnDifDecline" layoutX="785.0" layoutY="391.0" mnemonicParsing="false" onAction="#difDecline" text="Decline">
+         <font>
+            <Font name="Sitka Heading Bold" size="16.0" />
+         </font></Button>
+      <Label fx:id="difExisting" layoutX="461.0" layoutY="395.0" text="300">
+         <font>
+            <Font name="Sitka Display Bold" size="20.0" />
+         </font></Label>
+      <Label fx:id="difRequested" layoutX="592.0" layoutY="395.0" text="320">
+         <font>
+            <Font name="Sitka Display Bold" size="20.0" />
+         </font></Label>
+      <Label layoutX="88.0" layoutY="437.0" text="Estimated visitation time">
+         <font>
+            <Font name="Sitka Text Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnTimeAccept" layoutX="693.0" layoutY="438.0" mnemonicParsing="false" onAction="#timeAccept" text="Accept">
+         <font>
+            <Font name="Sitka Heading Bold" size="16.0" />
+         </font></Button>
+      <Button fx:id="btnTimeDecline" layoutX="785.0" layoutY="438.0" mnemonicParsing="false" onAction="#timeDecline" text="Decline">
+         <font>
+            <Font name="Sitka Heading Bold" size="16.0" />
+         </font></Button>
+      <Label fx:id="timeExisting" layoutX="461.0" layoutY="443.0" text="300">
+         <font>
+            <Font name="Sitka Display Bold" size="20.0" />
+         </font></Label>
+      <Label fx:id="timeRequested" layoutX="592.0" layoutY="438.0" text="320">
+         <font>
+            <Font name="Sitka Display Bold" size="20.0" />
+         </font></Label>
+   </children>
+</Pane>

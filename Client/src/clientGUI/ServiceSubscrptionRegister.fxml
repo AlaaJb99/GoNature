@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="696.0" prefWidth="992.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clientGUI.ServiceSubscrptionRegister">
+   <children>
+      <HBox fx:id="logo" layoutX="667.0" layoutY="10.0" prefHeight="180.0" prefWidth="186.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="148.0" layoutY="79.0" prefHeight="118.0" prefWidth="419.0" style="-fx-background-color: CORNSILK;" text="Family/Individual Subscrption Register" textAlignment="CENTER" textFill="#017532" wrapText="true">
+         <font>
+            <Font name="Modern No. 20" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="171.0" layoutY="221.0" prefHeight="27.0" prefWidth="98.0" text="First Name:">
+         <font>
+            <Font name="Modern No. 20" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="BackBtn" layoutX="596.0" layoutY="638.0" mnemonicParsing="false" onAction="#getBackBtn" prefHeight="44.0" prefWidth="111.0" text="Back">
+         <font>
+            <Font name="Modern No. 20" size="24.0" />
+         </font></Button>
+      <TextField fx:id="txtFirstName" layoutX="270.0" layoutY="219.0" prefHeight="25.0" prefWidth="167.0">
+         <font>
+            <Font name="Sitka Small Bold" size="15.0" />
+         </font></TextField>
+      <Button fx:id="btnSignUp" layoutX="239.0" layoutY="638.0" mnemonicParsing="false" onAction="#SignUp" prefHeight="44.0" prefWidth="111.0" text="Sign Up">
+         <font>
+            <Font name="Modern No. 20" size="24.0" />
+         </font></Button>
+      <Label layoutX="172.0" layoutY="262.0" prefHeight="31.0" prefWidth="98.0" text="Last Name:">
+         <font>
+            <Font name="Modern No. 20" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtLastName" layoutX="270.0" layoutY="262.0" prefHeight="25.0" prefWidth="167.0">
+         <font>
+            <Font name="Sitka Small Bold" size="15.0" />
+         </font></TextField>
+      <Label layoutX="239.0" layoutY="308.0" prefHeight="29.0" prefWidth="28.0" text="ID:">
+         <font>
+            <Font name="Modern No. 20" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="203.0" layoutY="399.0" prefHeight="27.0" prefWidth="62.0" text="Phone:">
+         <font>
+            <Font name="Modern No. 20" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="207.0" layoutY="353.0" prefHeight="27.0" prefWidth="56.0" text="Email:">
+         <font>
+            <Font name="Modern No. 20" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="99.0" layoutY="521.0" prefHeight="27.0" prefWidth="167.0" text="Credit Card Number:">
+         <font>
+            <Font name="Modern No. 20" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="135.0" layoutY="559.0" prefHeight="31.0" prefWidth="137.0" text="Card Holder ID:">
+         <font>
+            <Font name="Modern No. 20" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="151.0" layoutY="600.0" prefHeight="27.0" prefWidth="118.0" text="Expired Date: ">
+         <font>
+            <Font name="Modern No. 20" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="380.0" layoutY="598.0" prefHeight="31.0" prefWidth="48.0" text="CVV:">
+         <font>
+            <Font name="Modern No. 20" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtId" layoutX="270.0" layoutY="307.0" prefHeight="25.0" prefWidth="167.0">
+         <font>
+            <Font name="Sitka Small Bold" size="15.0" />
+         </font></TextField>
+      <TextField fx:id="txtEmail" layoutX="270.0" layoutY="351.0" prefHeight="28.0" prefWidth="167.0">
+         <font>
+            <Font name="Sitka Small Bold" size="15.0" />
+         </font></TextField>
+      <TextField fx:id="txtPhone" layoutX="270.0" layoutY="397.0" prefHeight="25.0" prefWidth="167.0">
+         <font>
+            <Font name="Sitka Small Bold" size="15.0" />
+         </font></TextField>
+      <TextField fx:id="txtCardHolder" layoutX="270.0" layoutY="559.0" prefHeight="25.0" prefWidth="167.0">
+         <font>
+            <Font name="Sitka Small Bold" size="15.0" />
+         </font></TextField>
+      <TextField fx:id="txtExpiredDate" layoutX="270.0" layoutY="598.0" prefHeight="25.0" prefWidth="79.0" promptText="MM/YY">
+         <font>
+            <Font name="Sitka Small Bold" size="15.0" />
+         </font></TextField>
+      <TextField fx:id="txtCVV" layoutX="425.0" layoutY="598.0" prefHeight="28.0" prefWidth="62.0" promptText="XXX">
+         <font>
+            <Font name="Sitka Small Bold" size="15.0" />
+         </font></TextField>
+      <Text fill="#f00707" layoutX="440.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text fill="#f00707" layoutX="440.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text fill="#f00707" layoutX="440.0" layoutY="422.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text fill="#f00707" layoutX="440.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text fill="#f00707" layoutX="440.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtNumOfMembers" layoutX="270.0" layoutY="480.0" prefHeight="25.0" prefWidth="150.0" visible="false" />
+      <Label fx:id="FamilyNum" layoutX="50.0" layoutY="480.0" prefHeight="29.0" prefWidth="220.0" text="Family Members Number:" visible="false">
+         <font>
+            <Font name="Modern No. 20" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCreditCard" layoutX="270.0" layoutY="519.0" prefHeight="29.0" prefWidth="220.0" promptText="XXXX XXXX XXXX XXXX">
+         <font>
+            <Font name="Sitka Small Bold" size="15.0" />
+         </font></TextField>
+      <Text fx:id="familystar" fill="#f00707" layoutX="425.0" layoutY="505.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" visible="false">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Label layoutX="116.0" layoutY="441.0" prefHeight="27.0" prefWidth="150.0" text="Subscrption Type:">
+         <font>
+            <Font name="Modern No. 20" size="20.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="individualRadio" layoutX="272.0" layoutY="444.0" mnemonicParsing="false" onAction="#getIndividualRadio" text="Individual">
+         <font>
+            <Font name="Modern No. 20" size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="subType" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="familyRadio" layoutX="420.0" layoutY="444.0" mnemonicParsing="false" onAction="#getFamilyRadio" text="Family" toggleGroup="$subType">
+         <font>
+            <Font name="Modern No. 20" size="18.0" />
+         </font>
+      </RadioButton>
+      <HBox fx:id="cvvIcon" layoutX="492.0" layoutY="588.0" prefHeight="51.0" prefWidth="71.0" />
+      <Text fill="#f00707" layoutX="523.0" layoutY="465.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
