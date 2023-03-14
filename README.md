@@ -1,5 +1,5 @@
 # GoNature
-GoNature is a software system for managing visits to parks and nature reservesץ
+GoNature is a software system for managing visits to parks and nature reserves.
 The system is decentralized, and enables local entry control (for example limiting the number of visitors) at the various sites (parks), as well as central management of activity control and sales promotion.
 
 <img src="./main_page.png" alt="Main Page" width="400"/>
